@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    >
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:backgroundTint="#4E85B6"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="16dp"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_repo_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="10dp"
+                android:text="Bottom navigation using navigation components"
+                android:maxLength="20"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_repo_title"
+                android:layout_marginLeft="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:text="language :"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:drawableLeft="@drawable/language"
+                        android:drawablePadding="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:text="kotlin"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:text="starts       :"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:drawableLeft="@drawable/star"
+                        android:drawablePadding="5dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/tv_stargaze"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:text="kotlin"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:text="created    :"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:drawableLeft="@drawable/create"
+                        android:drawablePadding="5dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_createdDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textSize="18sp"
+                        android:text="kotlin"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
+    </RelativeLayout>
