@@ -3,7 +3,6 @@
     android:shape="oval">
     <size android:width="140dp"
         android:height="140dp"/>
-        <gradient
-            android:startColor="#563A98"
-            android:endColor="#83165F"/>
+    <stroke android:color="@color/white" android:width="2dp"/>
+
 </shape>
